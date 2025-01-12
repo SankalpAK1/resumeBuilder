@@ -21,6 +21,10 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Ensure UTF-8 encoding
+\usepackage{pifont}         % For symbols like \ding
+
 
 
 %----------FONT OPTIONS----------
@@ -124,11 +128,11 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape Manish Kumar} \\ \vspace{1pt}
-    \small +91 ********** $|$ \href{mailto:mverma6250@gmail.com}{{mverma6250@gmail.com}}    \\ 
+    \textbf{\Huge \scshape Sankalp Kareppagol} \\ \vspace{1pt}
+    \small +91 7019816638 $|$ \href{mailto:yougester.sankalp@gmail.com}{{yougester.sankalp@gmail.com}}    \\ 
     \small  
-    \href{https://www.linkedin.com/in/manish-kumar-373b86176/}{\bf LinkedIn} $|$
-    \href{https://github.com/manisnitt}{\bf GitHub} 
+    \href{https://linkedin.com/in/sankalp-k-18b41016a/}{\bf LinkedIn} %$|$
+    %\href{https://github.com/manisnitt}{\bf GitHub} 
     
 \end{center}
 % \href{https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ}{\bf YouTube}
@@ -139,20 +143,22 @@
 \section{Profile}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \item 
-Data Engineer with 5+ years of experience in building large-scale data pipelines, ETL processes, and data warehouse solutions. Utilized technologies like \textbf{Python, SQL, Spark, Kubernetes, Databricks, and Kafka} to develop multi-terabyte scalable big data solutions for Fortune 100 Pharmaceutical and Telecom companies.
+Data Engineer with 3+ years of experience in building large-scale data pipelines, ETL processes, and data warehouse solutions. Utilized technologies like \textbf{Scala, SQL, Spark, Sqoop, Hive, and HDFS} to develop a scalable big data solutions for various
+reporting and analytics purposes.
 \end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{:\hspace{0.06cm}  Python, SQL, Scala} \\
-     \textbf{Big Data Technologies}{:\hspace{0.49cm}     Spark, PySpark, Spark SQL, YARN, Kubernetes, Hadoop, Hive, Impala } \\
-     \textbf{Streaming Technology}{:\hspace{0.51cm} Kafka, Spark structured streaming} \\
-     \textbf{Cloud computing}{:\hspace{1.38cm} ADF, Databricks, ADLS, Amazon S3, AWS Glue, AWS EMR } \\
-     \textbf{Data Engineering Tools}{:\hspace{0.28cm} Azure DevOps, Data Modelling, ETL/ELT data Pipeline}\\
-     \textbf{Orchestration}{:\hspace{2.02cm} Airflow, Kubernetes, CA Autosys} \\
-     \textbf{Familiar}{:\hspace{3cm} FastAPI, Elastic search, Neo4J} \\
+     \textbf{Programming Languages}{:\hspace{.6cm}  Scala, SQL} \\
+     \textbf{Big Data Technologies}{:\hspace{1cm}  Spark, Spark SQL, YARN, Hadoop, Hive, Sqoop, Hbase } \\
+     \textbf{Database}{:\hspace{3.3cm} MySQL} \\
+     %\textbf{Streaming Technology}{:\hspace{0.51cm} Kafka, Spark structured streaming} \\
+     \textbf{Cloud computing(Familiar)}{:\hspace{.1cm} Amazon S3, AWS Glue, AWS EMR, AWS Athena, AWS Redshift, AWS EC2 } \\
+     %\textbf{Data Engineering Tools}{:\hspace{0.28cm} Azure DevOps, Data Modelling, ETL/ELT data Pipeline}\\
+     %\textbf{Orchestration}{:\hspace{2.02cm} Airflow, Kubernetes, CA Autosys} \\
+     %\textbf{Familiar}{:\hspace{3cm} FastAPI, Elastic search, Neo4J} \\
      
      
     }}
@@ -189,51 +195,19 @@ Data Engineer with 5+ years of experience in building large-scale data pipelines
 % -------------------------------------------
 
     \resumeSubheading
-      {Reliance Jio}{August 2022 - Present}
-      {Senior Data Engineer}{Gurgaon, India}
+      {Tata Consultancy Services}{July 2019 - December 2022}
+      {Data Engineer}{Bangalore, India}
       \resumeItemListStart
-      \resumeItem{Led a team of 4 Data Engineers in designing, developing, and optimizing data pipelines and ETL processes. }
-      \resumeItem{Developed an automated invoicing system for dynamic cloud pricing, ensuring accurate monthly billing adjustments and improving invoicing accuracy by 100\%. }
+      \resumeItem{Extracted and ingested data from MySQL databases into HDFS using Sqoop, creating a robust raw data layer for downstream processing.}
+      \resumeItem{Designed and implemented ETL pipelines using Spark Scala to clean, transform, and structure raw data into DataFrames, ensuring high-quality datasets.}
         % \item Developed an automated invoicing system, enabling dynamic pricing adjustments on cloud service provider invoices.
-        \resumeItem {Integrated and processed billing data from multiple sources including \textbf{AWS, Azure, GCP, and Oracle}, handling various file formats like JSON,CSV, and Parquet.}
-        \resumeItem {Implemented Spark optimization techniques such as \textbf{caching, multithreading, and broadcast} joins, resulting in a 20\% decrease in processing time for handling a daily load of around \textbf{2 Million records}.}
+        \resumeItem {Established a cleaned data layer to serve as a reliable source for analytics and reporting, improving data accessibility for cross-functional teams.}
+        \resumeItem {Applied Spark transformations and business logic to process cleaned data, resulting in refined datasets stored in a processed data layer.}
+        \resumeItem {Optimized Hive and Spark processes through performance tuning, enhancing job efficiency and reducing runtime for large datasets.}
+\resumeItem {Created Hive external tables on top of processed data, enabling seamless querying and reporting for stakeholders.}
+\resumeItem {Ensured data integrity and availability across the project lifecycle, supporting critical healthcare reporting and analytics needs.}
+\resumeItem {Collaborated with a team of engineers to meet project deadlines, contributing to the overall success of the healthcare data initiative.}
     \resumeItemListEnd
-
-     \resumeSubheading
-      {Reliance Jio}{August 2022 - Present}
-      {Data Engineer}{Gurgaon, India}
-      \resumeItemListStart
-        \resumeItem {Created an API service using Python to generate dynamic DAGs in \textbf{Apache Airflow}.}
-        \resumeItem{Designed and implemented advanced scheduling capabilities using Airflow for data pipeline orchestration, reducing manual intervention time by 80\% and streamlining workflow efficiency.}
-         \resumeItem {Developed a microservice deployed on Kubernetes, integrating FastAPI to push messages into a \textbf{Kafka} broker for real-time tracking of processing status (success or failure).}
-        
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {ZS Associates}{April 2020 - July 2022}
-      {Data Engineer}{Pune, India}
-      \resumeItemListStart
-        \resumeItem {Delivered a project to migrate legacy on-premise processes to the cloud using Big Data technologies (Spark), reducing processing time by 20\%.}
-\resumeItem {Conducted in-depth data analysis using \textbf{Hive, Impala, and Spark SQL}, providing SIT/UAT fixes and ensuring smooth operations in the production environment.}
-\resumeItem {
-Optimized overall process performance through \textbf{Spark performance tuning}, improving job run times by 20\% and efficiently managing a \textbf{15Terabyte(TB)} dataset containing approximately \textbf{12 billion} records.
-% Optimized overall process performance through \textbf{Spark performance tuning}, managing a vast dataset of \textbf{15Terabyte(TB)}.
-}
-\resumeItem{Worked on data ingestion pipeline to ingest the flat file in the \textbf{Data lake}.}
-      \resumeItemListEnd
-
-
-      \resumeSubheading
-      {Standav}{July 2019 - March 2020}
-      {Data Analyst}{Bangalore, India}
-      \resumeItemListStart
-        \resumeItem {Analysed more than 30,000 customer sales data to find the bottlenecks in the
-business process.}
-\resumeItem {Worked as Salesforce Admin and got exposure to the sales cloud.}
-
-        
-      \resumeItemListEnd
-
       
 
   \resumeSubHeadingListEnd
@@ -258,19 +232,40 @@ business process.}
     %         \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
     %       \resumeItemListEnd
     % \resumeSubHeadingListEnd
+%----------Achievements----------%
+\section{Achievements}
+  \begin{itemize}
+    \item \textbf{Client Appreciation Certificate}
+    \begin{itemize}
+      \item Received in appreciation of outstanding contribution and commitment.
+    \end{itemize}
+    \item \textbf{Commitment Award}
+    \begin{itemize}
+      \item Awarded for demonstrated commitment and dedication, including continuous service of over three years at Tata Consultancy Services (TCS).
+    \end{itemize}
+  \end{itemize}
 
-%-----------EDUCATION-----------
+
+
+%-----------EDUCATION-----------%
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {NIT Trichy}{Trichy, Tamilnadu}
-      {Bachelor of Technology in Materials Engineering}{July 2015 - June 2019}
+      {Jain College of Engineering}{Belagavi, Karnataka}
+      {Bachelor of Engineering in Electronics and Communications}{July 2015 - June 2019}
       \resumeSubheading
-      {SDS College}{Kaler, Bihar}
-      {Senior Secondary School}{April 2012 - Mar 2014}
+      {RLS PU College}{Belagavi, Karnataka}
+      {Senior Secondary School}{April 2013 - Mar 2015}
     
   \resumeSubHeadingListEnd
-%-------------------------------
+%-------------------------------%
+
+\section{Certification}
+  \begin{itemize}
+    \item \textbf{BigData Masters Program by Trendytech}
+    \end{itemize}
+    
+
 
 %
 
